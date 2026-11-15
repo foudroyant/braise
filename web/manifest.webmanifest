@@ -1,0 +1,19 @@
+{
+  "name": "Braise",
+  "short_name": "Braise",
+  "description": "Partage de fichiers et chat sur votre réseau local.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0c11",
+  "theme_color": "#0b0d12",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

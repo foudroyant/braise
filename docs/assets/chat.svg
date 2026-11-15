@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-labelledby="chatTitle">
+  <title id="chatTitle">Deux bulles de discussion reliées par une petite flamme.</title>
+
+  <circle cx="330" cy="225" r="178" fill="#d93a24" opacity=".065"/>
+  <circle cx="506" cy="110" r="74" fill="#f2762a" opacity=".09"/>
+  <ellipse cx="300" cy="414" rx="188" ry="14" fill="#191310" opacity=".07"/>
+
+  <g transform="translate(43 86)">
+    <path d="M18 0h286a18 18 0 0 1 18 18v122a18 18 0 0 1-18 18H76l-32 28 7-28H18A18 18 0 0 1 0 140V18A18 18 0 0 1 18 0Z" fill="#fffdf8" stroke="#191310" stroke-width="2.6" stroke-linejoin="round"/>
+    <circle cx="36" cy="35" r="17" fill="#f2762a" stroke="#191310" stroke-width="1.8"/>
+    <text x="30" y="41" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#191310">C</text>
+    <text x="63" y="33" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#191310">Camille</text>
+    <text x="132" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing=".8" fill="#191310" opacity=".42">12:32</text>
+    <text x="63" y="55" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#191310">J'ai mis le plan et les photos</text>
+    <text x="63" y="73" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#191310">dans le dossier partagé.</text>
+    <g transform="translate(63 88)">
+      <rect width="176" height="38" rx="7" fill="#f7f0e5" stroke="#191310" stroke-width="1.5"/>
+      <rect x="8" y="8" width="22" height="22" rx="4" fill="#d93a24" opacity=".14"/>
+      <path d="M15 13h7l3 3v9h-10v-12Z" fill="none" stroke="#d93a24" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="38" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#191310">plan-atelier.pdf</text>
+      <text x="38" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#191310" opacity=".45">193 o</text>
+    </g>
+  </g>
+
+  <g transform="translate(253 247)">
+    <path d="M16 0h246a16 16 0 0 1 16 16v96a16 16 0 0 1-16 16h-30l28 26-4-26h-4a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16V16A16 16 0 0 1 16 0Z" fill="#f2762a" stroke="#191310" stroke-width="2.6" stroke-linejoin="round"/>
+    <circle cx="31" cy="31" r="15" fill="#d93a24" stroke="#191310" stroke-width="1.7"/>
+    <text x="26" y="36" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700" fill="#fffdf8">N</text>
+    <text x="55" y="29" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#191310">Noé</text>
+    <text x="94" y="28" font-family="ui-sans-serif, system-ui, sans-serif" font-size="8" font-weight="700" letter-spacing=".8" fill="#191310" opacity=".55">VOUS</text>
+    <text x="128" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#191310" opacity=".45">12:33</text>
+    <text x="55" y="49" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#191310">Je monte le dossier sur le poste</text>
+    <text x="55" y="67" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#191310">de l'atelier cet après-midi.</text>
+    <path d="M55 82h142" stroke="#191310" stroke-width="1.4" stroke-linecap="round" opacity=".22"/>
+  </g>
+
+  <g transform="translate(286 219)">
+    <path d="M0 0c4 7-.6 11.4-3.4 15.6-3 4.3-4.4 7-4.4 11.4a11 11 0 0 0 22 0c0-3.5-1.3-6.6-3.4-9.1-.7 2.2-2 3.8-3.7 4.9C11.7 15 8.5 7.7 0 0Z" fill="#ffc247" stroke="#191310" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(402 44)">
+    <rect width="154" height="30" rx="15" fill="#fffdf8" stroke="#191310" stroke-width="1.8"/>
+    <circle cx="17" cy="15" r="4" fill="#1e9e6a"/>
+    <text x="29" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing=".7" fill="#191310">2 PERSONNES</text>
+  </g>
+
+  <g transform="translate(46 348)">
+    <rect width="186" height="40" rx="12" fill="#fffdf8" stroke="#191310" stroke-width="1.8"/>
+    <text x="16" y="24" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" fill="#191310" opacity=".6">Camille écrit</text>
+    <circle cx="112" cy="20" r="3" fill="#f2762a"/>
+    <circle cx="123" cy="20" r="3" fill="#f2762a" opacity=".7"/>
+    <circle cx="134" cy="20" r="3" fill="#f2762a" opacity=".4"/>
+  </g>
+
+  <g transform="translate(465 382)">
+    <rect width="82" height="26" rx="3" fill="#ffc247" stroke="#191310" stroke-width="1.5"/>
+    <text x="13" y="17" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.4" fill="#191310">SSE</text>
+  </g>
+
+  <g fill="none" stroke="#191310" stroke-width="1.3" opacity=".22" stroke-linecap="round">
+    <path d="M40 300c-10 8-10 20-2 28"/>
+    <path d="M550 210c12 8 14 22 6 32"/>
+  </g>
+
+  <g fill="#d93a24" stroke="#191310" stroke-width="1.1">
+    <circle cx="216" cy="250" r="3.2"/>
+    <circle cx="473" cy="218" r="2.6" fill="#ffc247"/>
+    <circle cx="88" cy="74" r="2.4" fill="#f2762a"/>
+  </g>
+</svg>

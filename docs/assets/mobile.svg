@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-labelledby="mobileTitle">
+  <title id="mobileTitle">Un téléphone affiche Braise, un QR code permet de le rejoindre.</title>
+
+  <circle cx="336" cy="226" r="176" fill="#d93a24" opacity=".06"/>
+  <ellipse cx="310" cy="426" rx="190" ry="14" fill="#191310" opacity=".07"/>
+
+  <g fill="none" stroke="#d93a24" stroke-width="1.6" stroke-dasharray="4 9" stroke-linecap="round" opacity=".55">
+    <path d="M216 244c26-4 42-2 64 6"/>
+    <path d="M220 372c22 6 38 8 58 2"/>
+  </g>
+
+  <g transform="translate(296 32) rotate(4)">
+    <rect x="8" y="10" width="176" height="356" rx="28" fill="#191310" opacity=".08"/>
+    <rect width="176" height="356" rx="28" fill="#fbf6ec" stroke="#191310" stroke-width="2.8"/>
+    <rect x="9" y="13" width="158" height="330" rx="19" fill="#17120f"/>
+    <rect x="67" y="20" width="42" height="5" rx="2.5" fill="#fbf6ec" opacity=".4"/>
+    <path d="M22 36c1.4 5.2-1.4 8.2-3.6 10.8-2.2 2.7-3.4 5.1-3.4 7.9a7.6 7.6 0 0 0 15.2 0c0-2.4-.9-4.6-2.3-6.3-.5 1.4-1.3 2.5-2.4 3.2.6-5.5-.6-11-3.5-15.6Z" fill="#f2762a"/>
+    <text x="38" y="52" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#fbf6ec">Braise</text>
+    <rect x="22" y="66" width="132" height="22" rx="6" fill="#231b16" stroke="#fbf6ec" stroke-opacity=".1"/>
+    <text x="32" y="80" font-family="ui-sans-serif, system-ui, sans-serif" font-size="8.5" fill="#fbf6ec" opacity=".55">Filtrer les fichiers…</text>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#fbf6ec">
+      <rect x="22" y="100" width="26" height="26" rx="6" fill="#7a4b13" opacity=".55"/>
+      <path d="M29 111h4l1.5 1.5H42v7H29v-8.5Z" fill="none" stroke="#ffc247" stroke-width="1.4"/>
+      <text x="55" y="112" font-size="9" fill="#fbf6ec">photos-chantier</text>
+      <text x="55" y="122" font-size="7" fill="#fbf6ec" opacity=".38">dossier</text>
+
+      <rect x="22" y="134" width="26" height="26" rx="6" fill="#1d3b4b"/>
+      <path d="M29 141h11v11H29v-11Z" fill="none" stroke="#7dd3fc" stroke-width="1.3"/>
+      <circle cx="33" cy="145" r="1.4" fill="#7dd3fc"/>
+      <text x="55" y="146" font-size="9" fill="#fbf6ec">affiche.svg</text>
+      <text x="55" y="156" font-size="7" fill="#fbf6ec" opacity=".38">1 Ko</text>
+
+      <rect x="22" y="168" width="26" height="26" rx="6" fill="#4b1d24"/>
+      <path d="M30 175h8l3 3v9h-11v-12Z" fill="none" stroke="#fca5a5" stroke-width="1.3"/>
+      <text x="55" y="180" font-size="9" fill="#fbf6ec">plan-atelier.pdf</text>
+      <text x="55" y="190" font-size="7" fill="#fbf6ec" opacity=".38">193 o</text>
+
+      <rect x="22" y="202" width="26" height="26" rx="6" fill="#263021"/>
+      <path d="M30 210h10M30 214h10M30 218h7" stroke="#86efac" stroke-width="1.3"/>
+      <text x="55" y="214" font-size="9" fill="#fbf6ec">notes.md</text>
+      <text x="55" y="224" font-size="7" fill="#fbf6ec" opacity=".38">339 o</text>
+    </g>
+    <rect x="22" y="244" width="132" height="1" fill="#fbf6ec" opacity=".1"/>
+    <rect x="22" y="258" width="132" height="34" rx="7" fill="#f2762a" opacity=".13" stroke="#f2762a" stroke-opacity=".3"/>
+    <text x="32" y="272" font-family="ui-sans-serif, system-ui, sans-serif" font-size="8.5" fill="#ffc247">Discussion</text>
+    <text x="32" y="284" font-family="ui-sans-serif, system-ui, sans-serif" font-size="7" fill="#fbf6ec" opacity=".42">2 personnes · 4 messages</text>
+    <rect x="22" y="302" width="95" height="6" rx="3" fill="#fbf6ec" opacity=".12"/>
+    <rect x="22" y="314" width="70" height="6" rx="3" fill="#fbf6ec" opacity=".08"/>
+    <circle cx="128" cy="318" r="15" fill="#f2762a"/>
+    <path d="M122 318h12M128 312v12" stroke="#17120f" stroke-width="2" stroke-linecap="round"/>
+    <rect x="24" y="330" width="128" height="4" rx="2" fill="#fbf6ec" opacity=".1"/>
+  </g>
+
+  <g transform="translate(62 166) rotate(-7)">
+    <rect x="6" y="8" width="138" height="166" rx="8" fill="#191310" opacity=".08"/>
+    <rect width="138" height="166" rx="8" fill="#fbf6ec" stroke="#191310" stroke-width="2.4"/>
+    <text x="14" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="1.4" fill="#191310" opacity=".55">REJOINDRE</text>
+    <rect x="16" y="30" width="106" height="106" rx="3" fill="#fff" stroke="#191310" stroke-width="1.3"/>
+    <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAABlBMVEX///8AAABVwtN+AAACXUlEQVR42uzcTW7qShRF4WXRoOkhZCgMjQyNoTAEN9OI2E/+L8B+4RJbV7pau0Nkio/WiQ91CjDGGGOMMcYYY15IinxWaQAATjcAzrfnVQICAvsA3wAAH/mEOpfp0jFXqPL1vEpAQGAfoE6SrxngkORSjZeOuTyuEhAQ+AGo0gaAU5JcOd8EBAT+DtD0rxxyXVwlICCwFzD3oFUy1e6NY9K/6PVWV0BA4BfA4y7OKRzahxaYb65/sA0kICDwHnCXoZwzAhkr/NUICAi8D+QboN/z6V4JMN9cP+kehqzfnQUEBMbVRTV298bu7/TPlB8lIyAgsBfQrj5Pzzac0pvJ193wvgEWy1lAQGAbIN/UfT96BQBI+nnjlOlz43i/FRAQ2AGAhz3VpDPH6X9/CQDgOL+NgIDA1sBhnmNQpVk+U/r/ra6AgMAWQJIGeN5ALU7GTU3w4vRfQEBgBs7T1yXqZBgXlgUYgOltBAQE9gKGax/jBiqHpP97OvTdmcudqoCAwHZAAwBwzljHw4Tj8SjN6v8DAQGB3wN3fe10sG3KWM4AsNTqCggIbAfUxS5O+tV1+3BMxiM5nXlhpZwFBAS2AOY76fDUMP2fV/90tE5AQOA5xbiwzFygAgIC+wHlwvInnsbPjSm+cLg24RAQENgEWPmJp6fvM9VrnaqAgMBmwNOv0pQTjqqs98UJh4CAwA7AUM7FhAOAU+Cu6AUEBPYHyu63vTRkcLoICAisAY+dar+6OEozbey82OoKCAi8Bdzv4rSZJ4gfxe+urXaqAgIC2wDGGGOMMcYYY/7J/DcA8vd42txkdqsAAAAASUVORK5CYII=" x="18" y="32" width="102" height="102"/>
+    <text x="14" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing=".8" fill="#191310">braise.local</text>
+    <text x="14" y="163" font-family="ui-sans-serif, system-ui, sans-serif" font-size="7.5" fill="#191310" opacity=".45">même réseau, même feu</text>
+  </g>
+
+  <g transform="translate(476 272) rotate(9)">
+    <rect x="5" y="7" width="82" height="104" rx="6" fill="#191310" opacity=".07"/>
+    <path d="M0 7a7 7 0 0 1 7-7h53l22 22v78a7 7 0 0 1-7 7H7a7 7 0 0 1-7-7V7Z" fill="#fffdf8" stroke="#191310" stroke-width="2.2"/>
+    <path d="M60 0v22h22" fill="#efe4d3" stroke="#191310" stroke-width="2.2" stroke-linejoin="round"/>
+    <rect x="10" y="16" width="26" height="26" rx="4" fill="#f2762a" opacity=".18" stroke="#191310" stroke-width="1.2"/>
+    <text x="10" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" fill="#191310">photo.jpg</text>
+    <path d="M10 72h60M10 81h42" stroke="#191310" stroke-width="1.8" stroke-linecap="round" opacity=".18"/>
+  </g>
+
+  <g transform="translate(494 76) rotate(4)">
+    <rect width="58" height="24" rx="3" fill="#ffc247" stroke="#191310" stroke-width="1.5"/>
+    <text x="9" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" letter-spacing="1" fill="#191310">MOBILE</text>
+  </g>
+
+  <g fill="#f2762a" stroke="#191310" stroke-width="1.1">
+    <circle cx="258" cy="118" r="3"/>
+    <circle cx="536" cy="198" r="2.6" fill="#d93a24"/>
+    <circle cx="270" cy="398" r="2.4" fill="#ffc247"/>
+  </g>
+
+  <g stroke="#191310" stroke-width="1.3" opacity=".45">
+    <path d="M24 30h12M30 24v12"/>
+    <path d="M564 30h12M570 24v12"/>
+    <path d="M24 430h12M30 424v12"/>
+  </g>
+</svg>

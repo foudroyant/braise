@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Braise — le feu de camp de votre réseau local</title>
+  <meta name="description" content="Partage de fichiers, discussion et lecteur WebDAV sur votre réseau local. Un binaire Go, sans compte ni cloud, accessible depuis le navigateur et le téléphone.">
+  <link rel="canonical" href="https://foudroyant.github.io/braise/">
+  <meta name="theme-color" content="#f7f0e5">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Braise — le feu de camp de votre réseau local">
+  <meta property="og:description" content="Fichiers, discussion et lecteur réseau, dans le navigateur. Un binaire. Pas de compte. Pas de cloud.">
+  <meta property="og:url" content="https://foudroyant.github.io/braise/">
+  <meta property="og:image" content="https://foudroyant.github.io/braise/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Instrument+Serif:ital@1&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Braise",
+    "description": "Partage de fichiers, discussion et lecteur WebDAV sur un réseau local.",
+    "url": "https://foudroyant.github.io/braise/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "offers": { "@type": "Offer", "price": "0" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="topbar" id="top">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Braise, revenir en haut">
+        <img src="assets/mark.svg" alt="" width="40" height="40">
+        <span class="brand-name">Braise</span>
+        <span class="brand-version">v0.1.0</span>
+      </a>
+
+      <nav class="nav" aria-label="Sections">
+        <a href="#idee">L'idée</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#apercu">Aperçu</a>
+        <a href="#telecharger">Télécharger</a>
+      </nav>
+
+      <a class="topbar-github" href="https://github.com/foudroyant/braise" rel="noopener">
+        GitHub
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span>Partage local · sans compte</p>
+          <h1 id="hero-title">
+            <span class="line"><span>Le feu de camp</span></span>
+            <span class="line"><span>de votre</span></span>
+            <span class="line"><span><em>réseau local.</em></span></span>
+          </h1>
+          <p class="lede">Braise transforme un dossier en espace commun : fichiers, discussion et lecteur réseau, directement dans le navigateur. Un seul binaire. Aucun cloud. Aucun compte à créer.</p>
+
+          <div class="cta">
+            <a class="btn btn-primary" id="hero-download" href="#telecharger">
+              Télécharger Braise
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-4-4m4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/foudroyant/braise" rel="noopener">Code source</a>
+          </div>
+          <p class="cta-note" id="hero-os">Windows · macOS · Linux — sans installeur</p>
+
+          <ul class="specs" aria-label="Points clés">
+            <li>8 Mo</li>
+            <li>SSE</li>
+            <li>WebDAV</li>
+            <li>Mobile</li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <img src="assets/hero.svg" alt="Un feu de camp relie un ordinateur, un téléphone et un disque sur un réseau local." width="760" height="700">
+          <span class="ember ember-1" aria-hidden="true"></span>
+          <span class="ember ember-2" aria-hidden="true"></span>
+          <span class="ember ember-3" aria-hidden="true"></span>
+          <span class="ember ember-4" aria-hidden="true"></span>
+          <span class="ember ember-5" aria-hidden="true"></span>
+          <span class="ember ember-6" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <div class="wrap hero-foot">
+        <span>Réseau de confiance, zéro nuage</span>
+        <a href="#idee" class="scroll-cue" aria-label="Descendre vers l'idée">
+          Faites défiler
+          <svg viewBox="0 0 16 22" aria-hidden="true"><path d="M8 2v16m0 0 5-5m-5 5-5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Sans cloud</span><span class="sep">✳</span>
+            <span>Sans compte</span><span class="sep">✳</span>
+            <span>Temps réel</span><span class="sep">✳</span>
+            <span>WebDAV</span><span class="sep">✳</span>
+            <span>Mobile</span><span class="sep">✳</span>
+            <span>Un binaire</span><span class="sep">✳</span>
+            <span>Local d'abord</span><span class="sep">✳</span>
+          </div>
+          <div class="marquee-group">
+            <span>Sans cloud</span><span class="sep">✳</span>
+            <span>Sans compte</span><span class="sep">✳</span>
+            <span>Temps réel</span><span class="sep">✳</span>
+            <span>WebDAV</span><span class="sep">✳</span>
+            <span>Mobile</span><span class="sep">✳</span>
+            <span>Un binaire</span><span class="sep">✳</span>
+            <span>Local d'abord</span><span class="sep">✳</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section intro" id="idee">
+      <div class="wrap">
+        <p class="section-label"><span>01</span> L'idée</p>
+        <div class="intro-grid">
+          <h2 class="reveal">Un dossier.<br>Toute la pièce <em>autour.</em></h2>
+          <div class="intro-prose reveal">
+            <p>Vous lancez Braise sur une machine. Le terminal affiche une adresse, les autres appareils l'ouvrent. Le dossier partagé reste un dossier ordinaire, posé sur votre disque.</p>
+            <p>Les fichiers passent directement d'un appareil à l'autre. Pas de serveur à louer, pas de synchronisation dans le nuage, pas d'invitation à créer un compte.</p>
+          </div>
+        </div>
+
+        <div class="stats reveal" aria-label="Chiffres clés">
+          <div class="stat">
+            <strong>0</strong>
+            <span>compte à créer</span>
+          </div>
+          <div class="stat">
+            <strong>1</strong>
+            <span>binaire à lancer</span>
+          </div>
+          <div class="stat">
+            <strong>100<span>%</span></strong>
+            <span>sur votre réseau</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" id="comment">
+      <div class="wrap">
+        <div class="steps-head">
+          <p class="section-label"><span>02</span> En trois gestes</p>
+          <p class="steps-note">Le premier lancement prend moins de temps que de trouver un câble.</p>
+        </div>
+
+        <ol class="step-list">
+          <li class="step reveal">
+            <span class="step-no">01</span>
+            <h3>Lancez</h3>
+            <p>Sur le poste qui garde les fichiers. Braise crée le dossier, écoute le réseau et affiche l'adresse à partager.</p>
+            <code class="cmd">./braise --dir ~/Braise</code>
+          </li>
+          <li class="step reveal">
+            <span class="step-no">02</span>
+            <h3>Scannez</h3>
+            <p>Un téléphone sur le même Wi-Fi scanne le QR code depuis le bouton Partager. L'interface s'ouvre, déjà adaptée au petit écran.</p>
+            <span class="step-tag">même réseau · zéro installation</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-no">03</span>
+            <h3>Déposez</h3>
+            <p>Glissez des fichiers, écrivez un message. Les autres appareils voient la braise prendre en direct, sans rafraîchir la page.</p>
+            <span class="step-tag">SSE · présence · aperçus</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section features" id="fonctionnalites">
+      <div class="wrap">
+        <header class="features-head">
+          <p class="section-label"><span>03</span> Ce qu'il y a dedans</p>
+          <div class="features-title">
+            <h2 class="reveal">Pas une démo.<br><em>Un outil de travail.</em></h2>
+            <p class="features-lede reveal">Assez petit pour tenir sur une clé USB, assez complet pour remplacer le dossier réseau du bureau. Chaque fonctionnalité répond à un geste réel.</p>
+          </div>
+        </header>
+
+        <article class="feature reveal">
+          <div class="feature-art">
+            <img src="assets/files.svg" alt="Des fichiers tombent dans un dossier ouvert." width="600" height="460">
+            <span class="art-tag">01 / FICHIERS</span>
+          </div>
+          <div class="feature-copy">
+            <p class="feature-kicker">Fichiers</p>
+            <h3>Les fichiers restent des fichiers.</h3>
+            <p>Arborescence réelle, aperçus, recherche, corbeille. Ce que vous déposez existe dans un dossier ordinaire, pas dans un format propriétaire.</p>
+            <ul class="details">
+              <li>Dépôt multiple, glisser-déposer et pièces jointes.</li>
+              <li>Aperçu image, vidéo, audio, PDF et texte.</li>
+              <li>Téléchargement avec reprise, noms assainis, corbeille récupérable.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature-reverse reveal">
+          <div class="feature-art">
+            <img src="assets/chat.svg" alt="Deux bulles de discussion reliées par une flamme." width="600" height="460">
+            <span class="art-tag art-tag-right">02 / DISCUSSION</span>
+          </div>
+          <div class="feature-copy">
+            <p class="feature-kicker">Discussion</p>
+            <h3>La discussion tient dans le même feu.</h3>
+            <p>Messages en temps réel via SSE, présence, indicateur de saisie et pièces jointes. Un pseudo et une couleur suffisent.</p>
+            <ul class="details">
+              <li>Historique local dans un journal JSONL append-only.</li>
+              <li>Reconnexion automatique et rejeu des événements manqués.</li>
+              <li>Badge, son, vibration ; notifications système sur localhost ou HTTPS.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-art">
+            <img src="assets/mobile.svg" alt="Un téléphone affiche Braise et un QR code pour le rejoindre." width="600" height="460">
+            <span class="art-tag">03 / MOBILE</span>
+          </div>
+          <div class="feature-copy">
+            <p class="feature-kicker">Mobile</p>
+            <h3>Le téléphone n'est pas un invité.</h3>
+            <p>La même interface, deux onglets, l'envoi depuis l'appareil photo ou les fichiers. Le QR code évite de taper une adresse IP.</p>
+            <ul class="details">
+              <li>Mise en page Fichiers / Discussion sous 900 px.</li>
+              <li>Dépôt direct depuis iOS et Android.</li>
+              <li>Ajout à l'écran d'accueil pour un affichage plein écran.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature-reverse reveal">
+          <div class="feature-art">
+            <img src="assets/mount.svg" alt="Un ordinateur et un disque reliés, avec les étiquettes Windows, macOS et Linux." width="600" height="460">
+            <span class="art-tag art-tag-right">04 / WEBDav</span>
+          </div>
+          <div class="feature-copy">
+            <p class="feature-kicker">Lecteur réseau</p>
+            <h3>Montez le dossier comme un lecteur.</h3>
+            <p>WebDAV sur <code>/dav/</code>, sans droits administrateur et sans port 445. Le même dossier apparaît dans l'explorateur, à côté des autres disques.</p>
+            <ul class="details">
+              <li>Windows : <code>net use Z: \\192.168.1.20@8080\dav</code></li>
+              <li>macOS : Finder → Aller → Se connecter au serveur.</li>
+              <li>Linux : <code>gio mount dav://192.168.1.20:8080/dav</code></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section screens" id="apercu">
+      <div class="wrap">
+        <p class="section-label section-label-light"><span>04</span> Vrai écran</p>
+        <div class="screens-head">
+          <h2 class="reveal">Regardez <em>tourner</em> la braise.</h2>
+          <p class="reveal">Captures prises pendant les tests : dépôt, aperçu, discussion et présence. Les prénoms sont des profils de démonstration.</p>
+        </div>
+      </div>
+
+      <div class="wrap screen-stage">
+        <figure class="browser-frame">
+          <div class="browser-bar" aria-hidden="true">
+            <span class="browser-dot dot-red"></span>
+            <span class="browser-dot dot-orange"></span>
+            <span class="browser-dot dot-amber"></span>
+            <span class="browser-url">braise.local</span>
+          </div>
+          <img src="assets/screenshots/desktop.png" alt="Braise sur ordinateur : liste de fichiers à gauche, discussion à droite." width="2880" height="1800">
+        </figure>
+        <figure class="phone phone-a">
+          <img src="assets/screenshots/mobile-files.png" alt="Braise sur téléphone, onglet Fichiers." width="1170" height="2532">
+        </figure>
+        <figure class="phone phone-b">
+          <img src="assets/screenshots/mobile-chat.png" alt="Braise sur téléphone, onglet Discussion." width="1170" height="2532">
+        </figure>
+      </div>
+      <p class="screen-caption">Session locale · 1440 × 900 et iPhone 13 · aucune retouche</p>
+    </section>
+
+    <section class="section download" id="telecharger">
+      <div class="wrap">
+        <div class="download-head">
+          <p class="section-label section-label-light"><span>05</span> Télécharger</p>
+          <h2>Emportez <em>la braise.</em></h2>
+          <p>Binaires compilés depuis la source. Pas d'installeur, pas de dépendance, pas de service à configurer.</p>
+        </div>
+
+        <div class="download-grid">
+          <div class="download-copy">
+            <div class="terminal" aria-label="Commande de lancement">
+              <span class="terminal-line"><span class="prompt">$</span> chmod +x braise-linux-amd64</span>
+              <span class="terminal-line"><span class="prompt">$</span> ./braise-linux-amd64 --dir ~/Braise</span>
+              <span class="terminal-line comment"># Windows : braise-windows-amd64.exe --dir C:\Braise</span>
+            </div>
+
+            <p class="download-note">Les binaires ne sont pas signés. macOS peut demander une autorisation dans <strong>Réglages → Confidentialité et sécurité</strong> ; Windows peut afficher SmartScreen, cliquez sur <strong>Informations complémentaires</strong>.</p>
+
+            <div class="download-links">
+              <a href="https://github.com/foudroyant/braise/releases/latest" rel="noopener">Notes de version</a>
+              <a href="https://github.com/foudroyant/braise/releases/latest/download/checksums.txt" rel="noopener">Empreintes SHA-256</a>
+              <a href="https://github.com/foudroyant/braise" rel="noopener">Code source</a>
+            </div>
+          </div>
+
+          <div class="os-list" aria-label="Téléchargements par système">
+            <a class="os-row" data-key="windows-amd64" href="https://github.com/foudroyant/braise/releases/latest/download/braise-windows-amd64.exe" rel="noopener">
+              <span class="os-name">Windows<span class="rec-tag">pour cet appareil</span></span>
+              <span class="os-meta">x86_64 · .exe · 8,6 Mo</span>
+              <span class="os-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="os-row" data-key="darwin-arm64" data-group="mac" href="https://github.com/foudroyant/braise/releases/latest/download/braise-darwin-arm64" rel="noopener">
+              <span class="os-name">macOS · Apple Silicon<span class="rec-tag">pour cet appareil</span></span>
+              <span class="os-meta">arm64 · binaire · 7,9 Mo</span>
+              <span class="os-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="os-row" data-key="darwin-amd64" data-group="mac" href="https://github.com/foudroyant/braise/releases/latest/download/braise-darwin-amd64" rel="noopener">
+              <span class="os-name">macOS · Intel<span class="rec-tag">pour cet appareil</span></span>
+              <span class="os-meta">x86_64 · binaire · 8,5 Mo</span>
+              <span class="os-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="os-row" data-key="linux-amd64" href="https://github.com/foudroyant/braise/releases/latest/download/braise-linux-amd64" rel="noopener">
+              <span class="os-name">Linux<span class="rec-tag">pour cet appareil</span></span>
+              <span class="os-meta">x86_64 · binaire · 8,4 Mo</span>
+              <span class="os-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="os-row" data-key="linux-arm64" href="https://github.com/foudroyant/braise/releases/latest/download/braise-linux-arm64" rel="noopener">
+              <span class="os-name">Linux · ARM<span class="rec-tag">pour cet appareil</span></span>
+              <span class="os-meta">arm64 · binaire · 7,7 Mo</span>
+              <span class="os-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="security-note"><strong>Réseau de confiance.</strong> Braise n'a pas d'authentification par défaut : toute personne qui atteint le port peut lire, déposer et discuter. Pour un partage plus exposé, utilisez <code>--read-only</code> ou isolez le port dans votre pare-feu.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/mark.svg" alt="" width="34" height="34">
+          <p>Le feu de camp de votre réseau local.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Liens">
+          <a href="https://github.com/foudroyant/braise" rel="noopener">GitHub</a>
+          <a href="https://github.com/foudroyant/braise/releases" rel="noopener">Releases</a>
+          <a href="https://github.com/foudroyant/braise/issues" rel="noopener">Signaler un problème</a>
+          <a href="#telecharger">Télécharger</a>
+        </nav>
+      </div>
+
+      <div class="footer-word" aria-hidden="true">Braise</div>
+
+      <div class="footer-bottom">
+        <span>Go 1.26 · SSE · WebDAV · UI embarquée</span>
+        <span>© <span id="year">2026</span> Braise. Code source public.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

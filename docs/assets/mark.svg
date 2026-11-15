@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Braise">
+  <path d="M32 5c2.6 10.4-2.6 16.2-7.1 21.4C20.2 31.9 17 36.6 17 42.4a15 15 0 0 0 30 0c0-4.8-1.8-9.1-4.6-12.5-.9 2.9-2.6 5-4.8 6.4C38.4 27 36 15.8 32 5Z" fill="#f2762a" stroke="#191310" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M32 31c1.3 4.7-.7 7.4-2.7 9.8-2.2 2.6-3.3 4.5-3.3 7.6a6 6 0 0 0 12 0c0-2.3-.8-4.3-2-6-.5 1.4-1.3 2.4-2.4 3.1.5-4.8-.2-9.6-1.6-14.5Z" fill="#ffc247"/>
+  <path d="M40 42.5c.6-2.2.3-4.4-.6-6.4" stroke="#d93a24" stroke-width="2" stroke-linecap="round"/>
+</svg>
