@@ -420,6 +420,7 @@ button, input { font: inherit; }
 .section {
   position: relative;
   padding: clamp(72px, 9vw, 124px) 0;
+  scroll-margin-top: 88px;
 }
 
 .section-label {
@@ -1220,6 +1221,7 @@ h2 em {
 
 @media (max-width: 700px) {
   body { font-size: 16px; }
+  .section { scroll-margin-top: 76px; }
   .topbar-inner { height: 64px; gap: 14px; }
   .brand img { width: 33px; height: 33px; }
   .brand-name { font-size: 21px; }
