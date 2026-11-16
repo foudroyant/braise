@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foudroyant.github.io/braise/sitemap.xml

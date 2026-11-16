@@ -3,21 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Braise — le feu de camp de votre réseau local</title>
-  <meta name="description" content="Partage de fichiers, discussion et lecteur WebDAV sur votre réseau local. Un binaire Go, sans compte ni cloud, accessible depuis le navigateur et le téléphone.">
+  <title>Braise — partage de fichiers local, chat et WebDAV</title>
+  <meta name="description" content="Partagez fichiers et messages sur votre réseau local avec un seul binaire Go. Aperçus, QR code, WebDAV et mobile. Sans compte ni cloud.">
   <link rel="canonical" href="https://foudroyant.github.io/braise/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Stéphane Bamby Bazebibouta">
+  <meta name="application-name" content="Braise">
+  <meta name="keywords" content="partage de fichiers, réseau local, LAN, Go, WebDAV, chat, SSE, auto-hébergé, sans cloud">
   <meta name="theme-color" content="#f7f0e5">
+  <meta name="color-scheme" content="light">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
 
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Braise">
   <meta property="og:title" content="Braise — le feu de camp de votre réseau local">
   <meta property="og:description" content="Fichiers, discussion et lecteur réseau, dans le navigateur. Un binaire. Pas de compte. Pas de cloud.">
   <meta property="og:url" content="https://foudroyant.github.io/braise/">
   <meta property="og:image" content="https://foudroyant.github.io/braise/assets/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Braise — le feu de camp de votre réseau local. Illustration d'un ordinateur, d'un téléphone et d'un feu de camp.">
   <meta property="og:locale" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Braise — le feu de camp de votre réseau local">
+  <meta name="twitter:description" content="Partage de fichiers, discussion et WebDAV sur votre LAN. Un binaire Go, sans compte ni cloud.">
+  <meta name="twitter:image" content="https://foudroyant.github.io/braise/assets/og.png">
+  <meta name="twitter:image:alt" content="Braise — partage local, sans compte.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +40,114 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Braise",
-    "description": "Partage de fichiers, discussion et lecteur WebDAV sur un réseau local.",
-    "url": "https://foudroyant.github.io/braise/",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "Windows, macOS, Linux",
-    "offers": { "@type": "Offer", "price": "0" }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://foudroyant.github.io/braise/#website",
+        "url": "https://foudroyant.github.io/braise/",
+        "name": "Braise",
+        "description": "Partage de fichiers, discussion et lecteur WebDAV sur votre réseau local.",
+        "inLanguage": "fr-FR",
+        "publisher": {
+          "@type": "Person",
+          "name": "Stéphane Bamby Bazebibouta",
+          "url": "https://github.com/foudroyant"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://foudroyant.github.io/braise/#app",
+        "name": "Braise",
+        "alternateName": "Braise — partage local",
+        "description": "Application de partage de fichiers, de discussion en temps réel et de montage WebDAV pour un réseau local. Un binaire Go, interface web embarquée, sans compte ni cloud.",
+        "url": "https://foudroyant.github.io/braise/",
+        "downloadUrl": "https://github.com/foudroyant/braise/releases/latest",
+        "codeRepository": "https://github.com/foudroyant/braise",
+        "softwareVersion": "0.1.0",
+        "datePublished": "2026-11-15",
+        "dateModified": "2026-11-16",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "File Sharing",
+        "operatingSystem": "Windows, macOS, Linux, Android, iOS",
+        "inLanguage": "fr-FR",
+        "isAccessibleForFree": true,
+        "softwareRequirements": "Aucune dépendance pour le binaire ; Go 1.26+ pour compiler.",
+        "featureList": [
+          "Partage de fichiers par glisser-déposer",
+          "Discussion en temps réel avec SSE",
+          "Aperçus, recherche et corbeille",
+          "Montage WebDAV sur /dav/",
+          "QR code et interface mobile",
+          "Annonce mDNS braise.local"
+        ],
+        "screenshot": "https://foudroyant.github.io/braise/assets/screenshots/desktop.png",
+        "image": "https://foudroyant.github.io/braise/assets/og.png",
+        "author": {
+          "@type": "Person",
+          "name": "Stéphane Bamby Bazebibouta",
+          "url": "https://github.com/foudroyant"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://foudroyant.github.io/braise/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Faut-il créer un compte ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Au premier accès, vous choisissez un prénom et une couleur, conservés dans le navigateur. Il n'y a ni mot de passe ni inscription par défaut."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment un téléphone rejoint-il l'espace ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Connectez le téléphone au même Wi-Fi, ouvrez le bouton Partager sur l'ordinateur et scannez le QR code. Vous pouvez aussi taper l'adresse affichée dans le terminal, par exemple http://192.168.1.20:8080."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Où sont stockés les fichiers et les messages ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les fichiers restent dans le dossier choisi avec --dir. Les messages et événements sont écrits dans .braise/events.jsonl, dans ce même dossier. Rien n'est envoyé vers un service externe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Peut-on monter le dossier comme un lecteur réseau ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, via WebDAV sur /dav/. Windows utilise net use, macOS passe par Finder, Linux par gio mount. Aucun droit administrateur ni port 445 n'est nécessaire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Braise fonctionne-t-il sans Internet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Le serveur, l'interface et les échanges restent sur le réseau local. Internet n'est utile que pour télécharger le binaire ou les polices du site public."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Est-ce que Braise est sécurisé ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Braise est conçu pour un réseau de confiance : il n'y a pas d'authentification par défaut. Utilisez --read-only ou le pare-feu pour un partage plus exposé, et ne l'ouvrez pas directement sur Internet."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -50,6 +164,7 @@
 
       <nav class="nav" aria-label="Sections">
         <a href="#idee">L'idée</a>
+        <a href="#utilisation">Utilisation</a>
         <a href="#fonctionnalites">Fonctionnalités</a>
         <a href="#apercu">Aperçu</a>
         <a href="#telecharger">Télécharger</a>
@@ -164,7 +279,7 @@
       </div>
     </section>
 
-    <section class="section steps" id="comment">
+    <section class="section steps" id="utilisation">
       <div class="wrap">
         <div class="steps-head">
           <p class="section-label"><span>02</span> En trois gestes</p>
@@ -191,6 +306,13 @@
             <span class="step-tag">SSE · présence · aperçus</span>
           </li>
         </ol>
+
+        <p class="steps-foot">
+          <span class="steps-foot-label">Prérequis</span>
+          <span>Go 1.26+ pour compiler, aucun pour le binaire</span>
+          <span>Port 8080 par défaut</span>
+          <a href="https://github.com/foudroyant/braise/blob/main/README.md">Guide complet<span aria-hidden="true"> →</span></a>
+        </p>
       </div>
     </section>
 
@@ -303,10 +425,85 @@
       <p class="screen-caption">Session locale · 1440 × 900 et iPhone 13 · aucune retouche</p>
     </section>
 
+    <section class="section faq" id="faq">
+      <div class="wrap">
+        <p class="section-label"><span>05</span> Questions fréquentes</p>
+
+        <div class="faq-grid">
+          <div class="faq-head reveal">
+            <h2>Avant d'allumer <em>le&nbsp;feu.</em></h2>
+            <p>Les réponses courtes aux questions qu'on pose avant un premier partage. Le <a href="https://github.com/foudroyant/braise/blob/main/README.md">README</a> détaille le reste.</p>
+          </div>
+
+          <div class="faq-list reveal">
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Faut-il créer un compte ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Non. Au premier accès, vous choisissez un prénom et une couleur, conservés dans le navigateur. Il n'y a ni mot de passe ni inscription par défaut.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Comment un téléphone rejoint-il l'espace ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Connectez le téléphone au même Wi-Fi, ouvrez le bouton <strong>Partager</strong> sur l'ordinateur et scannez le QR code. Vous pouvez aussi taper l'adresse affichée dans le terminal, par exemple <code>http://192.168.1.20:8080</code>.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Où sont stockés les fichiers et les messages ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Les fichiers restent dans le dossier choisi avec <code>--dir</code>. Les messages et événements sont écrits dans <code>.braise/events.jsonl</code>, dans ce même dossier. Rien n'est envoyé vers un service externe.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Peut-on monter le dossier comme un lecteur réseau ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Oui, via WebDAV sur <code>/dav/</code>. Windows utilise <code>net use</code>, macOS passe par Finder, Linux par <code>gio mount</code>. Aucun droit administrateur ni port 445 n'est nécessaire.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Braise fonctionne-t-il sans Internet ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Oui. Le serveur, l'interface et les échanges restent sur le réseau local. Internet n'est utile que pour télécharger le binaire ou les polices du site public.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Est-ce que Braise est sécurisé ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Braise est conçu pour un réseau de confiance : il n'y a pas d'authentification par défaut. Utilisez <code>--read-only</code> ou le pare-feu pour un partage plus exposé, et ne l'ouvrez pas directement sur Internet.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section download" id="telecharger">
       <div class="wrap">
         <div class="download-head">
-          <p class="section-label section-label-light"><span>05</span> Télécharger</p>
+          <p class="section-label section-label-light"><span>06</span> Télécharger</p>
           <h2>Emportez <em>la braise.</em></h2>
           <p>Binaires compilés depuis la source. Pas d'installeur, pas de dépendance, pas de service à configurer.</p>
         </div>
