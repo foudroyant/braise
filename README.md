@@ -25,18 +25,31 @@
 
 ## Démarrage rapide
 
-Prérequis : Go 1.26 ou plus récent.
+Prérequis : Go 1.26 ou plus récent pour compiler, aucun pour le binaire.
+
+Le plus simple est de lancer Braise sans option. Il crée alors le dossier `~/Braise` sous macOS et Linux, ou `%USERPROFILE%\Braise` (`C:\Users\<vous>\Braise`) sous Windows.
+
+**macOS / Linux**
 
 ```bash
-go run . --dir ~/Braise
+go run .
+# ou
+go build -o braise .
+./braise
 ```
 
-Ou en binaire :
+**Windows (PowerShell)**
 
-```bash
-make build
-./bin/braise --dir ~/Braise
+```powershell
+go run .
+# ou
+go build -o braise.exe .
+.\braise.exe
 ```
+
+Avec un binaire téléchargé, double-cliquez sur `braise-windows-amd64.exe`, ou lancez `.\braise-windows-amd64.exe` dans PowerShell.
+
+> `~` est un raccourci de shell Unix, pas une syntaxe Windows. Braise ne l'interprète pas lui-même. `-/Braise` n'existe pas ; `/Braise` désigne la racine du disque courant, pas votre dossier personnel. Sous Windows, utilisez `--dir C:\Braise` ou `--dir %USERPROFILE%\Braise`, ou omettez `--dir`.
 
 Au lancement, Braise :
 
@@ -68,7 +81,7 @@ make dist
 ### Options
 
 ```
---dir        dossier partagé (défaut : ~/Braise)
+--dir        dossier partagé (défaut : ~/Braise, ou %USERPROFILE%\Braise sous Windows)
 --bind       adresse d'écoute (défaut : 0.0.0.0)
 --port       port HTTP (défaut : 8080)
 --name       nom affiché de l'espace

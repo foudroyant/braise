@@ -576,6 +576,31 @@ h2 em {
   overflow-x: auto;
   white-space: nowrap;
 }
+.cmd-stack {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+}
+.cmd-stack .cmd { margin-top: 0; }
+.cmd-os {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 8px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: rgba(247, 240, 229, .48);
+}
+.cmd-note {
+  margin: 14px 0 0;
+  font: 400 10px/1.6 var(--mono);
+  color: var(--muted);
+}
+.cmd-note code {
+  font: inherit;
+  color: var(--ink);
+  border-bottom: 1px solid rgba(25, 19, 16, .3);
+  white-space: nowrap;
+}
 .step-tag {
   display: flex;
   align-items: center;
@@ -880,6 +905,11 @@ h2 em {
   letter-spacing: -.025em;
   transition: color .18s;
 }
+.faq-q code {
+  font: 500 .82em var(--mono);
+  letter-spacing: -.02em;
+  white-space: nowrap;
+}
 .faq-item summary:hover .faq-q { color: var(--red); }
 .faq-item summary:focus-visible {
   outline: 2px solid var(--red);
@@ -1017,6 +1047,7 @@ h2 em {
   color: rgba(247, 240, 229, .76);
 }
 .download-note strong { color: var(--paper); font-weight: 600; }
+.download-note-sub { margin-top: 10px; }
 
 .download-links {
   display: flex;

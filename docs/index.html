@@ -139,6 +139,14 @@
           },
           {
             "@type": "Question",
+            "name": "Pourquoi ~/Braise ne marche-t-il pas sous Windows ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "~ est un raccourci du dossier personnel propre aux shells macOS et Linux. Braise ne l'interprète pas lui-même. Sous Windows, indiquez un chemin réel comme C:\\Braise ou %USERPROFILE%\\Braise, ou omettez --dir : le dossier par défaut sera C:\\Users\\<vous>\\Braise. -/Braise n'est pas valide, et /Braise désigne la racine du disque, pas votre dossier personnel."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Est-ce que Braise est sécurisé ?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -291,7 +299,12 @@
             <span class="step-no">01</span>
             <h3>Lancez</h3>
             <p>Sur le poste qui garde les fichiers. Braise crée le dossier, écoute le réseau et affiche l'adresse à partager.</p>
-            <code class="cmd">./braise --dir ~/Braise</code>
+            <div class="cmd-stack">
+              <code class="cmd"><span class="cmd-os">Windows</span>braise-windows-amd64.exe</code>
+              <code class="cmd"><span class="cmd-os">macOS</span>./braise-darwin-arm64</code>
+              <code class="cmd"><span class="cmd-os">Linux</span>./braise-linux-amd64</code>
+            </div>
+            <p class="cmd-note">Sans <code>--dir</code>, le dossier partagé est <code>C:\Users\vous\Braise</code> sous Windows, <code>~/Braise</code> ailleurs.</p>
           </li>
           <li class="step reveal">
             <span class="step-no">02</span>
@@ -488,6 +501,16 @@
 
             <details class="faq-item">
               <summary>
+                <span class="faq-q">Pourquoi <code>~/Braise</code> ne marche-t-il pas sous Windows ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p><code>~</code> est un raccourci du dossier personnel propre aux shells macOS et Linux. Braise ne l'interprète pas lui-même. Sous Windows, indiquez un chemin réel comme <code>C:\Braise</code> ou <code>%USERPROFILE%\Braise</code>, ou omettez <code>--dir</code> : le dossier par défaut sera <code>C:\Users\vous\Braise</code>. <code>-/Braise</code> n'est pas valide, et <code>/Braise</code> désigne la racine du disque, pas votre dossier personnel.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
                 <span class="faq-q">Est-ce que Braise est sécurisé ?</span>
                 <span class="faq-plus" aria-hidden="true"></span>
               </summary>
@@ -511,12 +534,16 @@
         <div class="download-grid">
           <div class="download-copy">
             <div class="terminal" aria-label="Commande de lancement">
+              <span class="terminal-line comment"># Windows : double-clic, ou dans PowerShell</span>
+              <span class="terminal-line"><span class="prompt">&gt;</span> .\braise-windows-amd64.exe</span>
+              <span class="terminal-line comment"># macOS / Linux</span>
               <span class="terminal-line"><span class="prompt">$</span> chmod +x braise-linux-amd64</span>
-              <span class="terminal-line"><span class="prompt">$</span> ./braise-linux-amd64 --dir ~/Braise</span>
-              <span class="terminal-line comment"># Windows : braise-windows-amd64.exe --dir C:\Braise</span>
+              <span class="terminal-line"><span class="prompt">$</span> ./braise-linux-amd64</span>
             </div>
 
-            <p class="download-note">Les binaires ne sont pas signés. macOS peut demander une autorisation dans <strong>Réglages → Confidentialité et sécurité</strong> ; Windows peut afficher SmartScreen, cliquez sur <strong>Informations complémentaires</strong>.</p>
+            <p class="download-note">Sans <code>--dir</code>, Braise partage <code>C:\Users\&lt;vous&gt;\Braise</code> sous Windows ou <code>~/Braise</code> sous macOS et Linux.</p>
+
+            <p class="download-note download-note-sub">Les binaires ne sont pas signés. macOS peut demander une autorisation dans <strong>Réglages → Confidentialité et sécurité</strong> ; Windows peut afficher SmartScreen, cliquez sur <strong>Informations complémentaires</strong>.</p>
 
             <div class="download-links">
               <a href="https://github.com/foudroyant/braise/releases/latest" rel="noopener">Notes de version</a>
