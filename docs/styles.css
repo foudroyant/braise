@@ -954,6 +954,12 @@ h2 em {
   color: var(--ink-soft);
 }
 .faq-a strong { color: var(--ink); font-weight: 600; }
+.faq-a a {
+  color: var(--ink);
+  text-decoration-color: var(--red);
+  text-underline-offset: 3px;
+}
+.faq-a a:hover { color: var(--red); }
 .faq-a code {
   font: 400 11px var(--mono);
   background: var(--paper);

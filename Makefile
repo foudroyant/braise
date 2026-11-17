@@ -3,7 +3,7 @@ VERSION ?= 0.1.0
 LDFLAGS := -s -w -X main.version=$(VERSION)
 OUT     := bin
 
-.PHONY: all build run vet test clean dist windows macos linux
+.PHONY: all build run vet test clean dist windows macos linux checksums sign-windows sign-macos
 
 all: build
 
@@ -38,3 +38,12 @@ linux:
 	GOOS=linux GOARCH=arm64 go build -trimpath -ldflags "$(LDFLAGS)" -o $(OUT)/$(BIN)-linux-arm64 .
 
 dist: windows macos linux
+
+checksums:
+	./scripts/checksums.sh bin
+
+sign-windows:
+	pwsh ./scripts/sign-windows.ps1 -Path bin/braise-windows-amd64.exe
+
+sign-macos:
+	./scripts/sign-macos.sh bin/braise-darwin-arm64 $(VERSION)

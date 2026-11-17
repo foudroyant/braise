@@ -152,6 +152,22 @@
               "@type": "Answer",
               "text": "Braise est conçu pour un réseau de confiance : il n'y a pas d'authentification par défaut. Utilisez --read-only ou le pare-feu pour un partage plus exposé, et ne l'ouvrez pas directement sur Internet."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Pourquoi un avertissement de sécurité au lancement ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les binaires de Braise ne sont pas encore signés. Windows SmartScreen et macOS Gatekeeper signalent donc un éditeur non identifié. Ce n'est pas la preuve d'un virus : vérifiez l'empreinte SHA-256 avant de lancer, ou compilez depuis la source. Pour continuer : Windows → Informations complémentaires → Exécuter quand même ; macOS → clic droit → Ouvrir, ou Réglages → Confidentialité et sécurité → Ouvrir quand même. Ne désactivez pas la protection globale du système."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment vérifier un binaire téléchargé ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Téléchargez checksums.txt à côté du binaire, puis calculez l'empreinte SHA-256 : Get-FileHash sous Windows, shasum -a 256 sous macOS, sha256sum sous Linux. Elle doit correspondre exactement à la ligne du fichier. La procédure complète et la politique de signature sont dans SIGNING.md."
+            }
           }
         ]
       }
@@ -518,6 +534,26 @@
                 <p>Braise est conçu pour un réseau de confiance : il n'y a pas d'authentification par défaut. Utilisez <code>--read-only</code> ou le pare-feu pour un partage plus exposé, et ne l'ouvrez pas directement sur Internet.</p>
               </div>
             </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Pourquoi un avertissement de sécurité au lancement ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Les binaires de Braise ne sont pas encore signés. Windows SmartScreen et macOS Gatekeeper signalent donc un éditeur non identifié. Ce n'est pas la preuve d'un virus : vérifiez l'empreinte SHA-256 avant de lancer, ou compilez depuis la source. Pour continuer : Windows → <strong>Informations complémentaires</strong> → <strong>Exécuter quand même</strong> ; macOS → clic droit → <strong>Ouvrir</strong>, ou <strong>Réglages → Confidentialité et sécurité → Ouvrir quand même</strong>. Ne désactivez pas la protection globale du système.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Comment vérifier un binaire téléchargé ?</span>
+                <span class="faq-plus" aria-hidden="true"></span>
+              </summary>
+              <div class="faq-a">
+                <p>Téléchargez <code>checksums.txt</code> à côté du binaire, puis calculez l'empreinte SHA-256 : <code>Get-FileHash</code> sous Windows, <code>shasum -a 256</code> sous macOS, <code>sha256sum</code> sous Linux. Elle doit correspondre exactement à la ligne du fichier. La procédure complète et la politique de signature sont dans <a href="https://github.com/foudroyant/braise/blob/main/SIGNING.md">SIGNING.md</a>.</p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -543,11 +579,12 @@
 
             <p class="download-note">Sans <code>--dir</code>, Braise partage <code>C:\Users\&lt;vous&gt;\Braise</code> sous Windows ou <code>~/Braise</code> sous macOS et Linux.</p>
 
-            <p class="download-note download-note-sub">Les binaires ne sont pas signés. macOS peut demander une autorisation dans <strong>Réglages → Confidentialité et sécurité</strong> ; Windows peut afficher SmartScreen, cliquez sur <strong>Informations complémentaires</strong>.</p>
+            <p class="download-note download-note-sub">Les binaires ne sont pas encore signés. Vérifiez l'empreinte SHA-256 avant de lancer. macOS peut demander une autorisation dans <strong>Réglages → Confidentialité et sécurité</strong> ; Windows peut afficher SmartScreen, cliquez sur <strong>Informations complémentaires</strong>.</p>
 
             <div class="download-links">
               <a href="https://github.com/foudroyant/braise/releases/latest" rel="noopener">Notes de version</a>
               <a href="https://github.com/foudroyant/braise/releases/latest/download/checksums.txt" rel="noopener">Empreintes SHA-256</a>
+              <a href="https://github.com/foudroyant/braise/blob/main/SIGNING.md" rel="noopener">Signature et vérification</a>
               <a href="https://github.com/foudroyant/braise" rel="noopener">Code source</a>
             </div>
           </div>

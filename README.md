@@ -70,7 +70,24 @@ Les autres appareils du LAN ouvrent `http://<ip-du-serveur>:8080` ou scannent le
 | Linux x86_64 | [`braise-linux-amd64`](https://github.com/foudroyant/braise/releases/latest/download/braise-linux-amd64) |
 | Linux ARM64 | [`braise-linux-arm64`](https://github.com/foudroyant/braise/releases/latest/download/braise-linux-arm64) |
 
-Empreintes SHA-256 : [`checksums.txt`](https://github.com/foudroyant/braise/releases/latest/download/checksums.txt). Les binaires ne sont pas signés : macOS peut demander une autorisation dans **Réglages → Confidentialité et sécurité**, Windows peut afficher SmartScreen.
+Empreintes SHA-256 : [`checksums.txt`](https://github.com/foudroyant/braise/releases/latest/download/checksums.txt).
+
+**Les binaires ne sont pas encore signés.** Windows SmartScreen peut afficher un avertissement, macOS peut demander une autorisation dans **Réglages → Confidentialité et sécurité**. Ce n'est pas la preuve d'un virus : c'est le comportement normal d'un éditeur non identifié. Vérifiez toujours l'empreinte avant de lancer un binaire.
+
+```bash
+# macOS
+shasum -a 256 -c checksums.txt
+# Linux
+sha256sum -c checksums.txt
+```
+
+```powershell
+# Windows
+Get-FileHash .\braise-windows-amd64.exe -Algorithm SHA256
+Get-AuthenticodeSignature .\braise-windows-amd64.exe | Format-List
+```
+
+La signature Authenticode (Windows) et la notarisation Apple (macOS) sont préparées dans [`SIGNING.md`](SIGNING.md) : options, coûts, secrets, commandes et politique de signature. Une release signée demandera un nouveau build (`v0.1.1` ou suivante) ; la `v0.1.0` restera non signée.
 
 Pour compiler soi-même les cinq cibles :
 
@@ -90,6 +107,10 @@ make dist
 --no-mdns    désactiver l'annonce braise.local
 --version    afficher la version
 ```
+
+### Désinstallation
+
+Braise est un binaire unique : arrêtez-le avec `Ctrl+C`, puis supprimez le fichier. Le dossier partagé et son sous-dossier `.braise` ne sont pas supprimés automatiquement. Supprimez-les manuellement si vous voulez aussi effacer les fichiers et l'historique local.
 
 ## Mobile
 
@@ -134,6 +155,8 @@ Braise est pensé pour un **réseau de confiance**. Il n'y a pas d'authentificat
 - aucune télémétrie, aucun appel sortant.
 
 Pour un réseau non fiable, attendez la V1 (PIN par espace, liens signés, HTTPS local) ou isolez le port dans votre pare-feu. Sur Windows, autorisez Braise uniquement sur le profil **Privé**.
+
+Pour signaler une vulnérabilité, utilisez un avis de sécurité privé GitHub : voir [`SECURITY.md`](SECURITY.md).
 
 ## Données
 
