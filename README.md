@@ -87,7 +87,7 @@ Get-FileHash .\braise-windows-amd64.exe -Algorithm SHA256
 Get-AuthenticodeSignature .\braise-windows-amd64.exe | Format-List
 ```
 
-La signature Authenticode (Windows) et la notarisation Apple (macOS) sont préparées dans [`SIGNING.md`](SIGNING.md) : options, coûts, secrets, commandes et politique de signature. Une release signée demandera un nouveau build (`v0.1.1` ou suivante) ; la `v0.1.0` restera non signée.
+La signature Authenticode (Windows) et la notarisation Apple (macOS) sont préparées dans [`SIGNING.md`](SIGNING.md) : options, coûts, secrets, commandes et modèle de politique de signature. Une release signée demandera un nouveau build (`v0.1.1` ou suivante) ; la `v0.1.0` restera non signée.
 
 Pour compiler soi-même les cinq cibles :
 
