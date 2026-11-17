@@ -11,6 +11,19 @@ La signature de code ne rend pas un programme « sûr » à elle seule. Elle app
 
 Elle ne remplace ni la vérification du code source, ni les empreintes SHA-256, ni un antivirus.
 
+## Ce qui reste à faire
+
+La signature ne peut pas être produite sans une identité vérifiée par une autorité. Les étapes qui dépendent du propriétaire du projet sont donc incontournables.
+
+| Étape | Qui | Ce que cela débloque |
+| --- | --- | --- |
+| 1. Choisir une licence OSI et ajouter `LICENSE` | Stéphane | candidature SignPath |
+| 2. Candidater à SignPath Foundation | Stéphane | signature Windows gratuite |
+| 3. Adhérer à l'Apple Developer Program et créer les certificats | Stéphane | signature et notarisation macOS |
+| 4. Ajouter les secrets, construire et publier `v0.1.1` | Stéphane / développement | release signée |
+
+Le point 1 est le seul vrai blocage administratif pour Windows. Tant qu'il n'est pas fait, un certificat OV payant reste la seule alternative.
+
 ## Pourquoi l'avertissement apparaît
 
 | Système | Comportement sans signature | Ce qui le fait disparaître |
@@ -90,6 +103,27 @@ La release `v0.1.0` restera non signée. Une signature s'applique à un nouveau 
 6. Chaque release est approuvée manuellement dans SignPath avant signature.
 
 SignPath signe avec **son** certificat au nom de la fondation. Ce n'est pas un certificat personnel : c'est la fondation qui se porte garante du lien entre le dépôt et le binaire.
+
+### Texte de candidature
+
+À adapter après le choix de la licence. Ce texte décrit le projet tel qu'il est publié.
+
+```text
+Projet : Braise
+Dépôt : https://github.com/foudroyant/braise
+Site : https://foudroyant.github.io/braise/
+Licence : [MIT / Apache-2.0 / GPL-3.0]
+Langage : Go
+Plateformes : Windows amd64, macOS arm64/amd64, Linux amd64/arm64
+
+Braise partage des fichiers et des messages sur un réseau local avec un seul
+binaire Go. L'interface web est embarquée, le transport est HTTP + SSE, et
+WebDAV est exposé sur /dav/. Il n'y a ni compte, ni cloud, ni télémétrie.
+Les releases sont produites depuis le dépôt public avec `make dist`.
+La version 0.1.0 est publiée avec cinq binaires et des empreintes SHA-256.
+La politique de signature est préparée et sera publiée dans le README après
+acceptation.
+```
 
 ## Windows avec un certificat OV classique
 
