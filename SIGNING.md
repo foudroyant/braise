@@ -17,7 +17,7 @@ La signature ne peut pas être produite sans une identité vérifiée par une au
 
 | Étape | Qui | Ce que cela débloque |
 | --- | --- | --- |
-| 1. Choisir une licence OSI et ajouter `LICENSE` | Stéphane | candidature SignPath |
+| 1. Licence MIT ajoutée (`LICENSE`) — fait | Stéphane | candidature SignPath |
 | 2. Candidater à SignPath Foundation | Stéphane | signature Windows gratuite |
 | 3. Adhérer à l'Apple Developer Program et créer les certificats | Stéphane | signature et notarisation macOS |
 | 4. Ajouter les secrets, construire et publier `v0.1.1` | Stéphane / développement | release signée |
@@ -72,7 +72,7 @@ Linux ne demande pas de certificat central pour exécuter un binaire. Les distri
 
 ## Recommandation pour Braise
 
-1. **Windows** : viser SignPath Foundation après avoir choisi une licence OSI. Sinon, acheter un certificat OV.
+1. **Windows** : Braise est sous MIT ; candidater à SignPath Foundation. Sinon, acheter un certificat OV.
 2. **macOS** : Apple Developer Program, puis distribution en `.pkg` signé et notarié.
 3. **Linux** : publier `checksums.txt` et, à terme, une signature cosign ou GPG.
 4. **Toutes plateformes** : afficher les empreintes et les commandes de vérification sur la page de téléchargement.
@@ -91,12 +91,12 @@ La release `v0.1.0` restera non signée. Une signature s'applique à un nouveau 
 - rôles de committer, reviewer et approbateur ;
 - approbation manuelle de chaque release.
 
-**Braise n'a pas encore de licence.** C'est le point bloquant pour SignPath : un dépôt public sans licence n'est pas juridiquement open source. Il faut d'abord ajouter un fichier `LICENSE`.
+**Braise est sous licence MIT depuis le 21 novembre 2026** (voir [`LICENSE`](LICENSE)). Le prérequis de licence OSI est donc rempli pour SignPath.
 
 ### Procédure
 
-1. Choisir une licence OSI et ajouter `LICENSE` à la racine.
-2. Ajouter une section **Politique de signature** dans le README (modèle plus bas).
+1. La licence MIT est déjà en place dans `LICENSE`.
+2. La section **Politique de signature** est déjà dans le README.
 3. Créer un compte sur [signpath.org](https://signpath.org/) et candidater via [signpath.org/apply](https://signpath.org/apply).
 4. Une fois accepté, configurer le projet dans SignPath.io et connecter le dépôt GitHub.
 5. Ajouter l'action SignPath au workflow de release.
@@ -106,13 +106,13 @@ SignPath signe avec **son** certificat au nom de la fondation. Ce n'est pas un c
 
 ### Texte de candidature
 
-À adapter après le choix de la licence. Ce texte décrit le projet tel qu'il est publié.
+Le texte ci-dessous décrit le projet tel qu'il est publié, avec la licence MIT.
 
 ```text
 Projet : Braise
 Dépôt : https://github.com/foudroyant/braise
 Site : https://foudroyant.github.io/braise/
-Licence : [MIT / Apache-2.0 / GPL-3.0]
+Licence : MIT
 Langage : Go
 Plateformes : Windows amd64, macOS arm64/amd64, Linux amd64/arm64
 
@@ -286,15 +286,17 @@ En attendant une release signée :
   - Windows : **Informations complémentaires → Exécuter quand même** ;
   - macOS : clic droit → **Ouvrir**, ou **Réglages → Confidentialité et sécurité → Ouvrir quand même**.
 
-## Politique de signature (modèle SignPath)
-
-À publier après acceptation du projet par SignPath Foundation, et après ajout d'une licence OSI.
-
-```markdown
 ## Politique de signature
 
-Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+La politique est publiée dans le [README](README.md#signature-des-binaires). Après acceptation par SignPath, ajouter la mention exacte demandée par la fondation :
 
+```markdown
+Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+```
+
+Rappel des rôles et de la déclaration de confidentialité :
+
+```markdown
 - Committers and reviewers: [@foudroyant](https://github.com/foudroyant)
 - Approvers: [@foudroyant](https://github.com/foudroyant)
 
