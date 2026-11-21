@@ -158,17 +158,6 @@ Pour un réseau non fiable, attendez la V1 (PIN par espace, liens signés, HTTPS
 
 Pour signaler une vulnérabilité, utilisez un avis de sécurité privé GitHub : voir [`SECURITY.md`](SECURITY.md).
 
-## Signature des binaires
-
-Les binaires `v0.1.0` ne sont pas signés. La vérification des empreintes, les options de signature et les secrets sont documentés dans [`SIGNING.md`](SIGNING.md).
-
-**Politique de signature.** Braise est candidat à la signature gratuite de [SignPath Foundation](https://signpath.org/) pour Windows. Si le projet est accepté, les releases Windows seront signées par SignPath.io avec un certificat de SignPath Foundation, et chaque release devra être approuvée manuellement.
-
-- Committers et reviewers : [@foudroyant](https://github.com/foudroyant)
-- Approbateurs : [@foudroyant](https://github.com/foudroyant)
-
-Braise ne transmet aucune donnée à d'autres systèmes réseau, sauf demande explicite de l'utilisateur ou de la personne qui l'installe ou l'exploite. Le programme ne contient ni télémétrie ni appel sortant.
-
 ## Données
 
 ```
@@ -232,4 +221,4 @@ Toutes les mutations acceptent l'en-tête `X-Braise-Peer: <id>` pour attribuer l
 
 ## Licence
 
-Braise est distribué sous [licence MIT](LICENSE). Vous pouvez l'utiliser, le modifier et le redistribuer, y compris commercialement, à condition de conserver la notice de copyright et le texte de la licence.
+À définir.
